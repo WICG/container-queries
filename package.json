@@ -1,0 +1,16 @@
+{
+  "name": "container-queries",
+  "description": "A method of controlling styling based on the size of a containing element.",
+  "homepage": "http://ResponsiveImagesCG.github.io/container-queries",
+  "bugs": "https://github.com/ResponsiveImagesCG/container-queries/issues",
+  "author": "Mat Marquis <wilto@bocoup.com>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ResponsiveImagesCG/container-queries.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1",
+    "grunt-gh-pages": "^0.10.0"
+  }
+}
