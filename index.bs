@@ -7,13 +7,13 @@ Group: ricg
 URL: https://github.com/ResponsiveImagesCG/container-queries
 Editor: Mat Marquis, Bocoup http://bocoup.com
 Abstract: Container queries allow an author to control styling based on the size of a containing element rather than the size of the user’s viewport.
-!Version History: <a href="https://github.com/ResponsiveImagesCG/picture-element/commits/gh-pages">Commit History</a>
+!Version History: <a href="https://github.com/ResponsiveImagesCG/container-queries/commits/gh-pages">Commit History</a>
 !Version History: <a href="https://twitter.com/respimg_commits">Github commits on Twitter</a>
 !Participate: <a href="http://w3c.responsiveimages.org/">Join the Responsive Issues Community Group</a>
 !Participate: <a href="http://list.responsiveimages.org/">Public Mailing List</a>
 !Participate: <a href="irc://irc.w3.org:6665/#respimg">IRC: #respimg on the W3C IRC server</a>
 !Participate: <a href="https://twitter.com/respimg">Twitter</a>
-!Participate: <a href="https://github.com/ResponsiveImagesCG/picture-element">GitHub</a>
+!Participate: <a href="https://github.com/ResponsiveImagesCG/container-queries/">GitHub</a>
 </pre>
 
 Introduction {#intro}
