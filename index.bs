@@ -19,10 +19,15 @@ Abstract: Container queries allow an author to control styling based on the size
 Introduction {#intro}
 =====================
 
-	Given a complex responsive layout, developers often require granular control over how the contents of an individual module will respond relative to the size of their parent container rather than the viewport size. This limitation conflicts with the goal of creating modular, independent components, often requiring a number of redundant CSS, complex exception cases, and workarounds, and the problem compounds itself depending on how dramatically a module adapts at each of its breakpoints.
+	Given a complex responsive layout, developers often require granular control over styling elements relative to the size of their parent container rather than the viewport size. Container queries allow an author to control styling based on the size of a containing element rather than the size of the user’s viewport.
 
-	Container queries allow an author to control styling based on the size of a containing element rather than the size of the user’s viewport.
 
+## Abstract ## {#abstract}
+
+### Limitations of Viewport-Based Media Queries ## {#mq-problems}
+(This section is not normative.)
+
+Limiting breakpoints to viewport size fundamentally conflicts with the goal of creating modular page components, often requiring a number of redundant CSS rules and complex exception cases spanning multiple viewport-based breakpoints. This problem is compounded depending on how dramatically a module adapts at each of its breakpoints. Once viewport-based breakpoints have been tuned to suit the limited and predictable number of contexts a module might occupy, adjustments to styling elsewhere on the page (layout, width, padding/margins, etc.) may cause a need to revisit a module’s viewport-based breakpoints completely, as those styles are disconnected from the context of the module itself.
 
 ## When to use Container Queries ## {#when-to-use}
 
@@ -31,8 +36,15 @@ Introduction {#intro}
 
 ## Examples of Usage ## {#usage}
 
-	<div class="example" id="example-1">
-	</div>
+[[Inside a CSS stylesheet, one can declare that sections apply to certain media types:]]
+
+<div class="example" id="example-1">
+	```css
+		.element:media( min-width: 30em ) screen {
+			
+		}
+	```
+</div>
 
 
 Container Queries {#container-queries}
