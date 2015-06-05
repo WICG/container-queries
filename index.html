@@ -642,7 +642,10 @@ Parts of this work may be from another specification document.  If so, those par
    <ul class="toc" role="directory">
     <li><a href="#intro"><span class="secno">1</span> <span class="content">Introduction</span></a>
      <ul class="toc">
-      <li><a href="#mq-problems"><span class="secno">1.1</span> <span class="content">Limitations of Viewport-Based Media Queries</span></a>
+      <li><a href="#abstract0"><span class="secno">1.1</span> <span class="content">Abstract</span></a>
+       <ul class="toc">
+        <li><a href="#mq-problems"><span class="secno">1.1.1</span> <span class="content">Limitations of Viewport-Based Media Queries ## {#mq-problems}</span></a>
+       </ul>
       <li><a href="#when-to-use"><span class="secno">1.2</span> <span class="content">When to use Container Queries</span></a>
       <li><a href="#usage"><span class="secno">1.3</span> <span class="content">Examples of Usage</span></a>
      </ul>
@@ -670,7 +673,12 @@ Conformance</span></a>
    <p>Given a complex responsive layout, developers often require granular control over styling elements relative to the size of their parent container rather than the viewport size. Container queries allow an author to control styling based on the size of a containing element rather than the size of the user’s viewport.</p>
 
 
-   <h3 class="heading settled" data-level="1.1" id="mq-problems"><span class="secno">1.1. </span><span class="content">Limitations of Viewport-Based Media Queries</span><a class="self-link" href="#mq-problems"></a></h3>
+
+   <h3 class="heading settled" data-level="1.1" id="abstract0"><span class="secno">1.1. </span><span class="content">Abstract</span><a class="self-link" href="#abstract0"></a></h3>
+
+
+   <h4 class="heading settled" data-level="1.1.1" id="mq-problems"><span class="secno">1.1.1. </span><span class="content">Limitations of Viewport-Based Media Queries ## {#mq-problems}</span><a class="self-link" href="#mq-problems"></a></h4>
+(This section is not normative.)
 
 
    <p>Limiting breakpoints to viewport size fundamentally conflicts with the goal of creating modular page components, often requiring a number of redundant CSS rules and complex exception cases spanning multiple viewport-based breakpoints. This problem is compounded depending on how dramatically a module adapts at each of its breakpoints. Once viewport-based breakpoints have been tuned to suit the limited and predictable number of contexts a module might occupy, adjustments to styling elsewhere on the page (layout, width, padding/margins, etc.) may cause a need to revisit a module’s viewport-based breakpoints completely, as those styles are disconnected from the context of the module itself.</p>
@@ -685,9 +693,18 @@ Conformance</span></a>
 
    <h3 class="heading settled" data-level="1.3" id="usage"><span class="secno">1.3. </span><span class="content">Examples of Usage</span><a class="self-link" href="#usage"></a></h3>
 
-	
+
+   <p>[[Inside a CSS stylesheet, one can declare that sections apply to certain media types:]]</p>
+
+
    <div class="example" id="example-1"><a class="self-link" href="#example-1"></a>
-	</div>
+	```css
+		.element:media( min-width: 30em ) screen {
+
+
+    <p>}</p>
+	```
+</div>
 
 
 
